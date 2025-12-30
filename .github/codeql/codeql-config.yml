@@ -1,0 +1,15 @@
+name: "Custom CodeQL config"
+
+queries:
+  - uses: security-and-quality
+  - uses: security-experimental
+
+paths:
+  - app
+  - lib
+
+paths-ignore:
+  - test
+  - spec
+  - vendor
+  - db/schema.rb
