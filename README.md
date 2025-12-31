@@ -37,3 +37,24 @@ All detected issues are surfaced in GitHub Security → Code Scanning Alerts and
 - Writing custom queries to match real-world vulnerabilities
 - Reducing false positives through configuration tuning
 - Understanding the full SARIF upload lifecycle
+
+## Repository Structure:
+
+```csharp
+Jaboo9/rails
+├── .github/
+│   ├── workflows/
+│   │   └── codeql.yml
+│   └── codeql/
+│       ├── codeql-config.yml
+│       └── queries/
+│           ├── unsafe-sql.ql
+│           └── unsafe-redirect.ql
+├── app/
+│   ├── controllers/
+│   │   └── users_controller.rb
+│   └── models/
+│       └── user.rb
+├── lib/
+├── README.md
+```
