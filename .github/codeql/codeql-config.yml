@@ -13,3 +13,7 @@ paths-ignore:
   - spec
   - vendor
   - db/schema.rb
+
+queries:
+  - uses: security-and-quality
+  - uses: ./.github/codeql/queries
